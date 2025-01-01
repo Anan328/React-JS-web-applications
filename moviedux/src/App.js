@@ -1,12 +1,14 @@
 import './App.css';
 import './styles.css';
+import Header from './components/Header';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="header">
-        <h1>Welcome to Moviedux</h1>
-      </header>
+
+      <div className='container'>
+        <Header/>
+      </div>
       <footer className='footer'>
         <p className='footer'>Footer content here</p>
       </footer>
@@ -14,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+
