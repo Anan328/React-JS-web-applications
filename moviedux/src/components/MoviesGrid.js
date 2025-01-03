@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import '../styles.css';
-import { response } from "express";
 
 export default function MoviesGrid(){
 
@@ -21,7 +20,7 @@ export default function MoviesGrid(){
 
     return (
         <div>
-            {movies.length}
+            
         </div>
     );
 }
