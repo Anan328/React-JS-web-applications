@@ -10,7 +10,7 @@ export default function MoviesGrid(){
     useEffect(()=>{
         fetch("movies.json")
         .then(response=>{
-            response.json();
+            return response.json();
         })
         .then( data=>{
             setMovies(data)
@@ -20,7 +20,7 @@ export default function MoviesGrid(){
 
     return (
         <div>
-            
+            {movies.length}
         </div>
     );
 }
