@@ -17,15 +17,39 @@ export default function MoviesGrid() {
         setMovies(data);
       });
   }, []);
-  const handleSearchChange = (e)=> {
-    setSearchTerm(e.target.value);
-    
+  const handleSearchChange = (e)=>{
+    setSearchTerm(e.target.value); 
   } 
 
-  const filteredMovies = movies.filter(movie =>
-    movie.title.toLowerCase().includes(searchTerm.toLocaleLowerCase())
-  )
-  
+  const handleGenreChange = (e)=>{
+    setGenre(e.target.value);
+    // console.log(e.target.value)
+  }
+
+  const handleRatingChange = (e)=>{
+    setRating(e.target.value);
+    console.log(e.target.value)
+  }
+
+  const filteredMovies = movies.filter(movie => 
+    movie.title.toLowerCase().includes(searchTerm.toLowerCase()) && 
+    (genre === "All Genres" || movie.genre.toLowerCase().includes(genre.toLowerCase())) && 
+    (() => {
+        switch (rating) {
+          case "Good":
+            return movie.rating >= 8;
+          case "Okay":
+            return movie.rating >= 5 && movie.rating < 8;
+          case "Bad":
+            return movie.rating < 5;
+          default:
+            return true;  
+        }
+      })()
+    
+
+  );
+  // console.log(filteredMovies)
   return (
     <div>
       <input
@@ -36,9 +60,28 @@ export default function MoviesGrid() {
         onChange={handleSearchChange}
       />
 
-     <div className="filter-bar">
+      <div className="filter-bar">
+        <div className="filter-slot">
+          <label>Genre</label>
+          <select className="filter-dropdown" value = {genre} onChange={handleGenreChange}>
+            <option>All Genres</option>
+            <option>Action</option>
+            <option>Drama</option>
+            <option>Fantasy</option>
+            <option>Horror</option>
+          </select>
+        </div>
 
-     </div>
+        <div className="filter-slot">
+          <label>Rating</label>
+          <select className="filter-dropdown" value = {rating} onChange={handleRatingChange}>
+            <option>All</option>
+            <option>Good</option>
+            <option>Okay</option>
+            <option>Bad</option>
+          </select>
+        </div>
+      </div>
 
       <div className="movies-grid">
         {filteredMovies.map((movie) => (
