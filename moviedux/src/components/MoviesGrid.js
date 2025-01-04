@@ -30,24 +30,22 @@ export default function MoviesGrid() {
     setRating(e.target.value);
     console.log(e.target.value)
   }
-
+  const matchRating = (movie,rating)=>{
+    switch (rating) {
+        case "Good":
+          return movie.rating >= 8;
+        case "Okay":
+          return movie.rating >= 5 && movie.rating < 8;
+        case "Bad":
+          return movie.rating < 5;
+        default:
+          return true;  
+      }
+  }
   const filteredMovies = movies.filter(movie => 
-    movie.title.toLowerCase().includes(searchTerm.toLowerCase()) && 
     (genre === "All Genres" || movie.genre.toLowerCase().includes(genre.toLowerCase())) && 
-    (() => {
-        switch (rating) {
-          case "Good":
-            return movie.rating >= 8;
-          case "Okay":
-            return movie.rating >= 5 && movie.rating < 8;
-          case "Bad":
-            return movie.rating < 5;
-          default:
-            return true;  
-        }
-      })()
-    
-
+    matchRating(movie,rating) &&
+    movie.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
   // console.log(filteredMovies)
   return (
