@@ -1,21 +1,19 @@
-Here's the updated README based on the new structure:
 
-```markdown
 # Moviedux
 
-Moviedux is a movie listing app built with React. It displays a list of movies from json file and allows users to filter the movies based on genres and ratings using a search bar and dropdown menus.
+Moviedux is a dynamic movie listing application developed with React. It showcases a curated list of movies fetched from a locally stored `movies.json` file, allowing users to filter the movie list by genres and ratings through an intuitive search bar and dropdown menus.
 
 ## Features
 
-- Displays a list of movies fetched from a `movies.json` file stored locally in the project.
-- Includes a search bar to filter movies based on title.
-- Allows filtering movies by genre and rating using drop-down menus.
-- Built using React with components for better structure and reusability.
-- Simple and clean user interface with smooth user interaction.
+- Displays a list of movies fetched from a `movies.json` file stored locally within the project.
+- Includes a search bar to filter movies by title.
+- Allows filtering of movies by genre and rating through dropdown menus.
+- Built using React, leveraging components to ensure modularity and reusability.
+- Simple and clean UI for an engaging user experience.
 
 ## File Structure
 
-The project consists of the following folder and file structure:
+The project follows this file and folder structure:
 
 ```
 React-JS-web-applications/
@@ -62,7 +60,5 @@ React-JS-web-applications/
 ## Built With
 
 - React
-- CSS
 
 ## Written with ❤️ by Anaan
-``` 
