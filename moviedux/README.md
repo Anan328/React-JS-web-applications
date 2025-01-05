@@ -1,13 +1,18 @@
+Here’s the modified version of your README to include information about the watchlist functionality and the use of `localStorage` for persistence:
+
+---
 
 # Moviedux
 
-Moviedux is a dynamic movie listing application developed with React. It showcases a curated list of movies fetched from a locally stored `movies.json` file, allowing users to filter the movie list by genres and ratings through an intuitive search bar and dropdown menus.
+Moviedux is a dynamic movie listing application developed with React. It showcases a curated list of movies fetched from a locally stored `movies.json` file, allowing users to filter the movie list by genres and ratings through an intuitive search bar and dropdown menus. Users can also add movies to their personal watchlist, with the watchlist data being saved to `localStorage` to persist across page refreshes.
 
 ## Features
 
 - Displays a list of movies fetched from a `movies.json` file stored locally within the project.
 - Includes a search bar to filter movies by title.
 - Allows filtering of movies by genre and rating through dropdown menus.
+- Users can add and remove movies from their personal watchlist.
+- The watchlist is stored in the browser's `localStorage` to ensure it persists across page refreshes.
 - Built using React, leveraging components to ensure modularity and reusability.
 - Simple and clean UI for an engaging user experience.
 
@@ -62,3 +67,7 @@ React-JS-web-applications/
 - React
 
 ## Written with ❤️ by Anaan
+
+---
+
+This updated README now includes the new features related to the watchlist functionality and the persistence of data via `localStorage`. Let me know if you'd like any further tweaks! 😊
