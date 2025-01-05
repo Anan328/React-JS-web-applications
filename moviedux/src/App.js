@@ -11,6 +11,25 @@ import { useEffect, useState } from 'react';
 export default function App() {
 
   const [movies, setMovies] = useState([]);
+  const [watchlist, setWatchlist] = useState([]);
+
+  const toggleWatchlist  = (movieId) => {
+      setWatchlist(prev => prev.includes(movieId)?  prev.filter(id => id !== movieId) : [...prev, movieId]
+    )
+  }
+
+
+useEffect(() => {
+  const savedWatchlist = JSON.parse(localStorage.getItem("watchlist")) || [];
+  setWatchlist(savedWatchlist);
+}, []);
+
+
+useEffect(() => {
+  if (watchlist.length > 0)
+  localStorage.setItem("watchlist", JSON.stringify(watchlist));
+}, [watchlist]);
+
   useEffect(() => {
       fetch("movies.json")
         .then((response) => {
@@ -35,8 +54,8 @@ export default function App() {
               
           </nav>
           <Routes>
-            <Route path='/' element={<MoviesGrid movies={movies}/>}></Route>
-            <Route path='/watchlist' element={<Watchlist/>}></Route>
+            <Route path='/' element={<MoviesGrid movies={movies} watchlist={watchlist} toggleWatchlist={toggleWatchlist}/>}></Route>
+            <Route path='/watchlist' element={<Watchlist   movies={movies} watchlist={watchlist} toggleWatchlist={toggleWatchlist}/>}></Route>
           </Routes>
         </Router>
       </div>
