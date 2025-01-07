@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import "../styles.css";
 
-export default function TicketForm() {
+export default function TicketForm({dispatch}) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [priority, setPriority] = useState("1");
@@ -28,8 +28,12 @@ export default function TicketForm() {
       description,
       priority  
     };
+    dispatch({
+      type: 'ADD_TICKET',
+      payload: ticketData
+    })
     clearForm();
-    console.log(ticketData);
+    // console.log(ticketData);
   };
 
   
@@ -43,6 +47,7 @@ export default function TicketForm() {
           value={title}
           className="form-input"
           onChange={(e) => setTitle(e.target.value)}
+          required
         ></input>
       </div>
 
@@ -52,6 +57,7 @@ export default function TicketForm() {
           type="text"
           value={description}
           className="form-input"
+          required
           onChange={(e) => setDescription(e.target.value)}
         />
       </div>
