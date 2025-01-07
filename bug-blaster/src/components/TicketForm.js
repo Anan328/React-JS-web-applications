@@ -21,17 +21,17 @@ export default function TicketForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
     const ticketData = {
       id: uuidv4(), //new Date().toISOString(),
       title, // title : title
       description,
       priority  
     };
-    console.log(ticketData);
     clearForm();
+    console.log(ticketData);
   };
 
-  
   
 
   return (
