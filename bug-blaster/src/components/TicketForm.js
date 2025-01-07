@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 import "../styles.css";
 
 export default function TicketForm() {
@@ -20,8 +21,18 @@ export default function TicketForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const ticketData = {
+      id: uuidv4(), //new Date().toISOString(),
+      title, // title : title
+      description,
+      priority  
+    };
+    console.log(ticketData);
     clearForm();
   };
+
+  
+  
 
   return (
     <form onSubmit={handleSubmit} className="ticket-form">
@@ -44,6 +55,24 @@ export default function TicketForm() {
           onChange={(e) => setDescription(e.target.value)}
         />
       </div>
+      <fieldset className="priority-fieldset">
+        <legend>Priority</legend>
+        {Object.entries(priorityLabels).map(([value, label]) => (
+          <label key={value} className="priority-label">
+            <input
+              type="radio"
+              value={value}
+              checked={priority === value}
+              className="priority-input"
+              onChange={(e) => setPriority(e.target.value)}
+            ></input>
+            {label}
+          </label>
+        ))}
+      </fieldset>
+      <button type="submit" className="button">
+        Submit
+      </button>
     </form>
   );
 }
