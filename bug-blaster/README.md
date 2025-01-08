@@ -1,7 +1,3 @@
-
-
-Here's a `README.md` file for your "Bug Blaster" project:
-
 ```markdown
 # Bug Blaster
 
@@ -65,6 +61,4 @@ To get started with Bug Blaster, follow these steps:
 Feel free to fork the repository, make changes, and create a pull request if you'd like to contribute.
 
 If you have any suggestions for improvements, feel free to open an issue or create a pull request. Contributions are always welcome!
-
-
 ```
