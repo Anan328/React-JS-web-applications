@@ -24,11 +24,12 @@ To get started with Bug Blaster, follow these steps:
 
    ```bash
    git clone [https://github.com/Anan328/React-JS-web-applications.git](https://github.com/Anan328/React-JS-web-applications.git)
+    ```
 
 2. Install dependencies:
 
    ```bash
-   cd bug-blaster
+   cd bug-blaster 
    npm install
    ```
 
