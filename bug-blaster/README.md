@@ -29,7 +29,10 @@ To get started with Bug Blaster, follow these steps:
 2. Install dependencies:
 
    ```bash
-   cd bug-blaster 
+   cd bug-blaster
+   ```
+   
+   ```bash
    npm install
    ```
 
