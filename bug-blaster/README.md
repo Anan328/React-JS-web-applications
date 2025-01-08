@@ -1,4 +1,3 @@
-```markdown
 # Bug Blaster
 
 Bug Blaster is a bug tracking application built with React and useReducer. It allows users to:
@@ -15,7 +14,7 @@ Bug Blaster is a bug tracking application built with React and useReducer. It al
 - **Sorting:** Bugs can be sorted by priority, either from High to Low or Low to High.
 - **Edit & Delete:** Allows users to edit the title, description, or priority of a bug and delete bugs from the list.
 - **Local Storage:** The bug list persists even after a page refresh, using the browser's local storage.
-- **useReducer:** State management is handled using React's `useReducer` hook to separate UI components and business logic.
+- **useReducer:** State management is handled using React's `useReducer` hook to separate UI components and logic.
 
 
 ## Installation
@@ -24,22 +23,22 @@ To get started with Bug Blaster, follow these steps:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/Anan328/React-JS-web-applications.git
-   ```
+   ```bash
+   git clone [https://github.com/Anan328/React-JS-web-applications.git](https://github.com/Anan328/React-JS-web-applications.git)
+   ```
 
 2. Install dependencies:
 
-   ```bash
-   cd bug-blaster
-   npm install
-   ```
+   ```bash
+   cd bug-blaster
+   npm install
+   ```
 
 3. Start the development server:
 
-   ```bash
-   npm start
-   ```
+   ```bash
+   npm start
+   ```
 
 4. Open the app in your browser at `http://localhost:3000`.
 
@@ -62,4 +61,3 @@ To get started with Bug Blaster, follow these steps:
 Feel free to fork the repository, make changes, and create a pull request if you'd like to contribute.
 
 If you have any suggestions for improvements, feel free to open an issue or create a pull request. Contributions are always welcome!
-```
