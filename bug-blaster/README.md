@@ -17,6 +17,7 @@ Bug Blaster is a bug tracking application built with React and useReducer. It al
 - **Local Storage:** The bug list persists even after a page refresh, using the browser's local storage.
 - **useReducer:** State management is handled using React's `useReducer` hook to separate UI components and business logic.
 
+
 ## Installation
 
 To get started with Bug Blaster, follow these steps:
