@@ -16,14 +16,19 @@ const TicketItem = ({ ticket, dispatch }) => {
       <p>{description}</p>
       <button
         className="button"
-        onClick={() => dispatch({ type: "DELETE_TICKET", payload: { id } })}
+        onClick={() => {
+        dispatch({ type: "DELETE_TICKET", payload: { id } });
+        // dispatch({ type: "CLEAR_EDITING_TICKET" }); // logic handled in case: DELETE_TICKET in tickeReducer
+        }
+      }
+        
       >
         Delete
       </button>
 
       <button
         className="button"
-        onClick={() => {/*  */}}
+        onClick={() => dispatch({ type: "SET_EDITING_TICKET", payload: ticket })}
       >
         Edit
       </button>
