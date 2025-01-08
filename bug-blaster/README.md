@@ -23,7 +23,7 @@ To get started with Bug Blaster, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/Anan328/React-JS-web-applications.git](https://github.com/Anan328/React-JS-web-applications.git)
+   git clone https://github.com/Anan328/React-JS-web-applications.git
     ```
 
 2. Install dependencies:
