@@ -1,5 +1,9 @@
 export default function ticketReducer(state, action) {
   switch (action.type) {
+    case "SET_TICKETS":
+      return{
+        ...state, tickets: action.payload
+      }
     case "ADD_TICKET":
       return { ...state, tickets: [...state.tickets, action.payload] };
     case "UPDATE_TICKET":

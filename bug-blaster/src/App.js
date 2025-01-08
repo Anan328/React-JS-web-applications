@@ -1,6 +1,6 @@
 import "./App.css";
 import "./styles.css";
-import { useReducer } from "react";
+import { useEffect, useReducer } from "react";
 import TicketForm from "./components/TicketForm";
 import ticketReducer from "./reducers/ticketReducer";
 import TicketList from "./components/TicketList";
@@ -11,6 +11,16 @@ function App() {
   const initialState = { tickets: [], editingTicket: null, sortPreference:"High to Low"};
   const [state, dispatch] = useReducer(ticketReducer, initialState);
   const sortedTickets = sortingTickets(state.tickets,state.sortPreference);
+
+  useEffect(() => {
+    const savedTickets = JSON.parse(localStorage.getItem("savedTickets")) || [];
+    dispatch({ type: "SET_TICKETS", payload: savedTickets });
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (state.tickets.length > 0)
+    localStorage.setItem("savedTickets", JSON.stringify(state.tickets));
+  }, [state.tickets]);
 
   return (
     <div className="App">
