@@ -27,11 +27,15 @@ export default function TicketForm({dispatch, editingTicket}) {
     setTitle("");
     setDescription("");
     setPriority("1");
-    dispatch({
-      type: "CLEAR_EDITING_TICKET",
-      payload: null
-    }) 
   };
+
+  const cancelEdit = ()=>{
+
+    clearForm();
+    dispatch({
+      type: "CLEAR_EDITING_TICKET"
+    }) 
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -94,7 +98,7 @@ export default function TicketForm({dispatch, editingTicket}) {
         Submit
       </button>
       {editingTicket && (
-        <button type="button" className="button" onClick={()=>clearForm()}>
+        <button type="button" className="button" onClick={()=>cancelEdit()}>
           Cancel Edit
         </button>
       )}
