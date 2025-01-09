@@ -1,43 +1,60 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "../style.css";
 import { createPost } from "../services/postservice";
 function PostForm() {
-    
-    const [title,setTitle] = useState("");
-    const [body,setBody] = useState("");
+  const [title, setTitle] = useState("");
+  const [body, setBody] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
 
-    const clearForm = ()=>{
-        setTitle("");
-        setBody("");
-    }
-    const formHandler = (e)=>{
-        e.preventDefault();
-        const newPost = {title,body};
-        // console.log(newPost);
+  const clearForm = () => {
+    setTitle("");
+    setBody("");
+  };
+  const formHandler = (e) => {
+    e.preventDefault();
+    const newPost = { title, body };
+    // console.log(newPost);
 
-        createPost(newPost)
-        .then((result) => {
-            clearForm();
-            console.log(result);
-            
-        }).catch((err) => {
-            console.error(err);
-            
-        });
-    }
+    createPost(newPost)
+      .then((result) => {
+        clearForm();
+        // console.log(result);
+        setShowPopup(true);
+        setTimeout(() => setShowPopup(false), 3000);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
   return (
     <div>
-        <h1>Add a new post</h1>
-        <form onClick={formHandler} className="form-container">
+      <h1>Add a new post</h1>
+      <form onSubmit={formHandler} className="form-container">
         <label className="form-label">Title</label>
-        <input type='text' className="form-input" value={title} onChange={(e)=> setTitle(e.target.value)}/>
+        <input
+          type="text"
+          className="form-input"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          required
+        />
         <label className="form-label">Body</label>
-        <input type='text' className="form-input"  value={body} onChange={(e)=> setBody(e.target.value)}/>
+        <input
+          type="text"
+          className="form-input"
+          value={body}
+          onChange={(e) => setBody(e.target.value)}
+          required
+        />
         <button className="submit-btn">Submit</button>
-    </form>
+      </form>
+      {showPopup && (
+        <div className="popup">
+          <p>Post Submitted Successfully!</p>
+        </div>
+      )}
     </div>
-    
-  )
+  );
 }
 
-export default PostForm
+export default PostForm;
