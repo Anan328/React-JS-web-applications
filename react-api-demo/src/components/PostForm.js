@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import "../style.css";
+import { v4 as uuidv4 } from 'uuid';
+
 import { createPost } from "../services/postservice";
-function PostForm() {
+
+
+function PostForm({posts,setPosts}) {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [showPopup, setShowPopup] = useState(false);
@@ -12,7 +16,9 @@ function PostForm() {
   };
   const formHandler = (e) => {
     e.preventDefault();
-    const newPost = { title, body };
+    const newPost = { userId: uuidv4(),id: uuidv4(),title, body };
+    // console.log(newPost);
+
     // console.log(newPost);
 
     createPost(newPost)
@@ -20,6 +26,7 @@ function PostForm() {
         clearForm();
         // console.log(result);
         setShowPopup(true);
+        setPosts((prev)=> [...prev,newPost]);
         setTimeout(() => setShowPopup(false), 3000);
       })
       .catch((err) => {

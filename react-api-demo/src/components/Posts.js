@@ -30,7 +30,7 @@ function Posts() {
   }
   return (
     <div>
-      <PostForm/>
+      <PostForm posts={posts} setPosts={setPosts}/>
       <h1>Posts</h1>
       <ul>
         {posts.map((post) => (
