@@ -1,10 +1,15 @@
-import './App.css';
+import "./App.css";
+import BlogPage from "./components/BlogPage";
+import UserInfoContext from "./context/UserInfoContext";
 
 function App() {
+  
+  const userInfo = {username: "Admin", isAdmin: true}
+
   return (
-    <div className="App">
-      
-    </div>
+    <UserInfoContext.Provider value={userInfo}>
+      <BlogPage/>
+    </UserInfoContext.Provider>
   );
 }
 
