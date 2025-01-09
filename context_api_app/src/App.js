@@ -1,15 +1,21 @@
 import "./App.css";
-import BlogPage from "./components/BlogPage";
-import UserInfoContext from "./context/UserInfoContext";
+import ContentComponent from "./components/ContentComponent";
+import ThemeProvider from "./context/ThemeProvider";
+
 
 function App() {
   
-  const userInfo = {username: "Admin", isAdmin: true}
+  // const userInfo = {username: "Admin", isAdmin: true}
 
   return (
-    <UserInfoContext.Provider value={userInfo}>
-      <BlogPage/>
-    </UserInfoContext.Provider>
+     <ThemeProvider>
+      <ContentComponent/>
+     </ThemeProvider>
+
+
+    // <UserInfoContext.Provider value={userInfo}>
+    //   <BlogPage/>
+    // </UserInfoContext.Provider>
   );
 }
 
