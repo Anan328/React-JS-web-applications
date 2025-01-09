@@ -33,7 +33,9 @@ function Posts() {
       <PostForm posts={posts} setPosts={setPosts}/>
       <h1>Posts</h1>
       <ul>
-        {posts.map((post) => (
+        {posts
+        // .slice(0,10)
+        .map((post) => (
           <li key={post.id}>
           <h2>{post.title}</h2>
           <p>{post.body}</p>
