@@ -22,6 +22,7 @@ body {
     text-align: center;
     color: #333;
     font-size: 2rem;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
   
@@ -53,3 +54,82 @@ body {
     line-height: 1.5;
   }
   
+  .deletebtn {
+    background-color: #ff4d4d; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .deletebtn:hover {
+    background-color: #ff1a1a; 
+    transform: scale(1.05); 
+  }
+  
+  .deletebtn:active {
+    background-color: #e60000; 
+    transform: scale(0.95); 
+  }
+  
+  /* Form container styling */
+.form-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Label styling */
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-align: start;
+}
+
+/* Input field styling */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
