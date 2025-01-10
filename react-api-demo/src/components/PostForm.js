@@ -7,7 +7,7 @@ function PostForm({ posts, setPosts, isEdit, editPostId, setIsEdit }) {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-  
+
   const clearForm = () => {
     setTitle("");
     setBody("");
@@ -26,6 +26,7 @@ function PostForm({ posts, setPosts, isEdit, editPostId, setIsEdit }) {
 
   const formHandler = (e) => {
     e.preventDefault();
+    clearForm();
     if (isEdit) {
       editPostHandle();
     } else {
@@ -36,7 +37,6 @@ function PostForm({ posts, setPosts, isEdit, editPostId, setIsEdit }) {
   const addPostHandle = () => {
     createPost({ userId: uuidv4(), title, body })
       .then((response) => {
-        clearForm();
         setShowPopup(true);
         setPosts((prev) => [...prev, response.data]); // setPosts([...posts,response.data])
         setTimeout(() => setShowPopup(false), 3000);
@@ -51,7 +51,6 @@ function PostForm({ posts, setPosts, isEdit, editPostId, setIsEdit }) {
     // console.log(editPostId);
     editPost(editPostId, { userId: editPostData.userId, title, body })
       .then((response) => {
-        clearForm();
         setShowPopup(true);
         setPosts((prev) =>
           prev.map((post) => (post.id === editPostId ? response.data : post))
