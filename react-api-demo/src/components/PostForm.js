@@ -7,8 +7,7 @@ function PostForm({ posts, setPosts, isEdit, editPostId, setIsEdit }) {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-  let newPost;
-
+  
   const clearForm = () => {
     setTitle("");
     setBody("");
@@ -35,8 +34,7 @@ function PostForm({ posts, setPosts, isEdit, editPostId, setIsEdit }) {
   };
 
   const addPostHandle = () => {
-    newPost = { userId: uuidv4(), title, body };
-    createPost(newPost)
+    createPost({ userId: uuidv4(), title, body })
       .then((response) => {
         clearForm();
         setShowPopup(true);
@@ -51,8 +49,7 @@ function PostForm({ posts, setPosts, isEdit, editPostId, setIsEdit }) {
   const editPostHandle = () => {
     const editPostData = posts.find((post) => post.id === editPostId);
     // console.log(editPostId);
-    newPost = { userId: editPostData.userId, title, body };
-    editPost(editPostId, newPost)
+    editPost(editPostId, { userId: editPostData.userId, title, body })
       .then((response) => {
         clearForm();
         setShowPopup(true);
