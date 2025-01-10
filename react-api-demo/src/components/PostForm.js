@@ -3,7 +3,7 @@ import "../style.css";
 import { v4 as uuidv4 } from "uuid";
 import { createPost, editPost } from "../services/postservice";
 
-function PostForm({ posts, setPosts, isEdit, editPostId,setIsEdit }) {
+function PostForm({ posts, setPosts, isEdit, editPostId, setIsEdit }) {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [showPopup, setShowPopup] = useState(false);
@@ -17,6 +17,7 @@ function PostForm({ posts, setPosts, isEdit, editPostId,setIsEdit }) {
   useEffect(() => {
     if (isEdit && editPostId) {
       const editPostData = posts.find((post) => post.id === editPostId);
+      // console.log(editPostId);
       if (editPostData) {
         setTitle(editPostData.title);
         setBody(editPostData.body);
@@ -24,39 +25,46 @@ function PostForm({ posts, setPosts, isEdit, editPostId,setIsEdit }) {
     }
   }, [editPostId, isEdit, posts]);
 
-
   const formHandler = (e) => {
     e.preventDefault();
     if (isEdit) {
-      const editPostData = posts.find((post) => post.id === editPostId);
-       newPost = { userId: editPostData.userId, id: editPostData.id, title, body };
-        editPost(editPostId, newPost)
-          .then((result) => {
-            clearForm();
-            setShowPopup(true);
-            setPosts((prev) =>
-              prev.map((post) => (post.id === editPostId ? newPost : post))
-            );
-            setIsEdit(false)
-            setTimeout(() => setShowPopup(false), 3000);
-          })
-          .catch((err) => {
-            console.error(err);
-          });
-      }
-     else {
-      newPost = { userId: uuidv4(), id: uuidv4(), title, body };
-      createPost(newPost)
-        .then((result) => {
-          clearForm();
-          setShowPopup(true);
-          setPosts((prev) => [...prev, newPost]);
-          setTimeout(() => setShowPopup(false), 3000);
-        })
-        .catch((err) => {
-          console.error(err);
-        });
+      editPostHandle();
+    } else {
+      addPostHandle();
     }
+  };
+
+  const addPostHandle = () => {
+    newPost = { userId: uuidv4(), title, body };
+    createPost(newPost)
+      .then((response) => {
+        clearForm();
+        setShowPopup(true);
+        setPosts((prev) => [...prev, response.data]); // setPosts([...posts,response.data])
+        setTimeout(() => setShowPopup(false), 3000);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
+
+  const editPostHandle = () => {
+    const editPostData = posts.find((post) => post.id === editPostId);
+    // console.log(editPostId);
+    newPost = { userId: editPostData.userId, title, body };
+    editPost(editPostId, newPost)
+      .then((response) => {
+        clearForm();
+        setShowPopup(true);
+        setPosts((prev) =>
+          prev.map((post) => (post.id === editPostId ? response.data : post))
+        );
+        setIsEdit(false);
+        setTimeout(() => setShowPopup(false), 3000);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   };
 
   return (
@@ -67,6 +75,7 @@ function PostForm({ posts, setPosts, isEdit, editPostId,setIsEdit }) {
         <input
           type="text"
           className="form-input"
+          spellCheck="false"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           required
@@ -74,7 +83,7 @@ function PostForm({ posts, setPosts, isEdit, editPostId,setIsEdit }) {
         <label className="form-label">Body</label>
         <textarea
           type="text"
-          spellCheck = "false"
+          spellCheck="false"
           className="form-area"
           value={body}
           onChange={(e) => setBody(e.target.value)}
