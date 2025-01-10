@@ -5,6 +5,8 @@ import PostForm from "./PostForm";
 
 function Posts() {
   const [posts, setPosts] = useState([]);
+  const [isEdit, setIsEdit] = useState(false);
+  const [editPostId, setEditPostId] = useState();
 
   useEffect(() => {
     getPosts()
@@ -28,9 +30,15 @@ function Posts() {
       
     })
   }
+
+  const handleEdit = (id)=>{
+    setIsEdit(true);
+    setEditPostId(id);
+  }
+
   return (
     <div>
-      <PostForm posts={posts} setPosts={setPosts}/>
+      <PostForm posts={posts} setPosts={setPosts} isEdit={isEdit} editPostId={editPostId} setIsEdit={setIsEdit}/>
       <h1>Posts</h1>
       <ul>
         {posts
@@ -39,7 +47,8 @@ function Posts() {
           <li key={post.id}>
           <h2>{post.title}</h2>
           <p>{post.body}</p>
-          <button className="deletebtn" onClick={()=>handleDelete(post.id)}>Delete</button>
+          <button className="btn edit" onClick={()=>handleEdit(post.id)}>Edit</button>
+          <button className="btn delete" onClick={()=>handleDelete(post.id)}>Delete</button>
           </li>
         ))}
       </ul>
