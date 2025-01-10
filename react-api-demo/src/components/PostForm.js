@@ -72,9 +72,10 @@ function PostForm({ posts, setPosts, isEdit, editPostId,setIsEdit }) {
           required
         />
         <label className="form-label">Body</label>
-        <input
+        <textarea
           type="text"
-          className="form-input"
+          spellCheck = "false"
+          className="form-area"
           value={body}
           onChange={(e) => setBody(e.target.value)}
           required

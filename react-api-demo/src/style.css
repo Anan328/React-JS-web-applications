@@ -119,6 +119,19 @@ body {
   color: #333;
   text-align: start;
 }
+.form-area {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
 
 /* Input field styling */
 .form-input {
