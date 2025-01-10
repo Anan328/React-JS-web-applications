@@ -1,6 +1,7 @@
 import React,{useContext} from 'react'
 import BooksContext from "../context/BooksContext"
 import '../style.css'
+import { Link } from 'react-router-dom';
 
 
 function Books() {
@@ -16,8 +17,7 @@ function Books() {
                     <li key={book.id}>
                         <h2>{book.title}</h2>
                         <h3>{book.author}</h3>
-                        <p>{book.description}</p>
-
+                        {book.description.length > 50 ? `${book.description.substring(0, 50)}...` : book.description} <Link className='readmore' to={`/books/${book.id}`}>readmore</Link>
                     </li>
                 ))
             }

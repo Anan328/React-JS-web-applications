@@ -49,6 +49,28 @@
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   }
+  .readmore {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff6347; /* Tomato color */
+    border: 2px solid #ff6347;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .readmore:hover {
+    background-color: #ff6347;
+    color: white;
+    transform: translateY(-3px);
+  }
+  
+  .readmore:active {
+    transform: translateY(1px);
+  }
   
   /* Title and Author Styles */
   h2 {
@@ -73,6 +95,18 @@
     line-height: 1.5;
     text-align: justify;
     margin-bottom: 20px;
+  }
+  .not-found {
+    text-align: center;
+    font-size: 18px;
+    color: #ff4d4d;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
   }
   
   /* Responsive Design */

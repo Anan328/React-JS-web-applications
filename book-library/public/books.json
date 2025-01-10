@@ -1,63 +1,237 @@
 [
-    {
-      "id": 1,
-      "title": "To Kill a Mockingbird",
-      "author": "Harper Lee",
-      "description": "A novel about the serious issues of rape and racial inequality."
-    },
-    {
-      "id": 2,
-      "title": "1984",
-      "author": "George Orwell",
-      "description": "A dystopian social science fiction novel and cautionary tale about the dangers of totalitarianism."
-    },
-    {
-      "id": 3,
-      "title": "Moby-Dick",
-      "author": "Herman Melville",
-      "description": "A story about Captain Ahab's obsessive quest to kill the white whale, Moby Dick."
-    },
-    {
-      "id": 4,
-      "title": "Pride and Prejudice",
-      "author": "Jane Austen",
-      "description": "A romantic novel that charts the emotional development of the protagonist, Elizabeth Bennet."
-    },
-    {
-      "id": 5,
-      "title": "The Great Gatsby",
-      "author": "F. Scott Fitzgerald",
-      "description": "A novel that critiques the disillusionment and moral decay of society during the Roaring Twenties."
-    },
-    {
-      "id": 6,
-      "title": "War and Peace",
-      "author": "Leo Tolstoy",
-      "description": "A historical novel that tells the story of five families against the backdrop of the Napoleonic Wars."
-    },
-    {
-      "id": 7,
-      "title": "The Catcher in the Rye",
-      "author": "J.D. Salinger",
-      "description": "A novel about the challenges of teenage life and the pain of growing up."
-    },
-    {
-      "id": 8,
-      "title": "The Hobbit",
-      "author": "J.R.R. Tolkien",
-      "description": "A fantasy novel about the adventures of Bilbo Baggins, a hobbit who embarks on a quest to win a share of the treasure guarded by Smaug the dragon."
-    },
-    {
-      "id": 9,
-      "title": "Crime and Punishment",
-      "author": "Fyodor Dostoevsky",
-      "description": "A novel about the mental anguish and moral dilemmas of an impoverished ex-student who plans and commits a murder."
-    },
-    {
-      "id": 10,
-      "title": "The Lord of the Rings",
-      "author": "J.R.R. Tolkien",
-      "description": "An epic fantasy novel that follows the quest to destroy the One Ring and defeat the Dark Lord Sauron."
-    }
-  ]
+  {
+    "id": 1,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "Set in the racially segregated American South during the 1930s, To Kill a Mockingbird follows young Scout Finch and her brother Jem as they witness their father, Atticus Finch, defend an innocent African American man accused of raping a white woman. The novel explores complex themes of racism, injustice, and moral growth as Scout grapples with the differences between right and wrong in a society plagued by prejudice. Through poignant moments and vivid character portrayals, Lee provides a deeply moving commentary on racial inequality and human compassion that resonates even today."
+  },
+  {
+    "id": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "1984 is a dystopian novel that takes place in a totalitarian regime led by the Party, where surveillance and manipulation of truth are pervasive. Winston Smith, the protagonist, works for the government rewriting history to fit the Party’s narrative. The novel explores themes of oppression, the dangers of state control, and the destruction of individuality. Orwell's stark portrayal of a world where free thought is criminalized serves as a chilling warning against the potential consequences of unchecked governmental power, mind control, and the erosion of personal freedoms."
+  },
+  {
+    "id": 3,
+    "title": "Moby-Dick",
+    "author": "Herman Melville",
+    "description": "Moby-Dick is the epic tale of Captain Ahab's obsession with hunting down Moby Dick, a massive white whale that severed his leg during a previous whaling voyage. Narrated by Ishmael, a crew member aboard Ahab’s ship, Pequod, the novel explores themes of revenge, fate, and the destructive nature of obsession. As Ahab's pursuit of the whale becomes all-consuming, the crew faces perilous encounters, philosophical reflections, and existential struggles. Melville’s exploration of humanity's place in the universe is both profound and haunting, making Moby-Dick a classic of American literature."
+  },
+  {
+    "id": 4,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "description": "Set in rural England during the early 19th century, Pride and Prejudice follows Elizabeth Bennet, one of five daughters in a respectable family. Elizabeth’s witty and independent nature sets her at odds with the social expectations of her time. The story centers on her evolving relationship with the proud yet enigmatic Mr. Darcy. Through humor, irony, and keen observations of society’s norms, Austen explores themes of love, marriage, and personal growth. The novel remains a timeless reflection on social class, familial duty, and the transformative power of love."
+  },
+  {
+    "id": 5,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "Set during the Jazz Age in the Roaring Twenties, The Great Gatsby tells the tragic story of Jay Gatsby, a mysterious millionaire who throws extravagant parties in an attempt to win back his lost love, Daisy Buchanan. Narrated by Nick Carraway, Gatsby’s neighbor, the novel exposes the superficial glamour and moral decay of the time. Fitzgerald’s exploration of the American Dream, wealth, class divisions, and unattainable desires critiques the emptiness behind society’s obsession with status and materialism. The Great Gatsby remains a sharp commentary on the fleeting nature of success and happiness."
+  },
+  {
+    "id": 6,
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "description": "A sweeping historical novel set against the backdrop of the Napoleonic Wars, War and Peace follows the lives of several aristocratic families in Russia. The novel delves into themes of war, peace, love, and personal destiny. Central to the narrative are Pierre Bezukhov, an awkward but idealistic heir; Andrei Bolkonsky, a disillusioned soldier; and Natasha Rostova, a young woman navigating the trials of love and loss. Tolstoy weaves together a narrative of profound philosophical reflections, epic battles, and intimate personal stories, capturing the essence of 19th-century Russian life."
+  },
+  {
+    "id": 7,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "description": "The Catcher in the Rye chronicles the story of Holden Caulfield, a disillusioned teenager struggling with depression after being expelled from his prep school. Narrated in a colloquial, often cynical tone, the novel follows Holden’s wandering through New York City as he grapples with his fears about growing up and losing his innocence. The title refers to Holden’s fantasy of saving children from the inevitable fall into adulthood, symbolizing his desire to preserve purity and innocence. Salinger’s exploration of alienation, identity, and emotional turmoil has made this novel a defining work in modern American literature."
+  },
+  {
+    "id": 8,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "description": "In The Hobbit, Bilbo Baggins, a seemingly ordinary hobbit, is swept away on an extraordinary adventure when he joins a group of dwarves and the wizard Gandalf to reclaim a treasure from the dragon Smaug. Throughout their journey, Bilbo faces trolls, goblins, and giant spiders, all while discovering his own courage and resourcefulness. Tolkien’s fantasy world is rich with lore and imagination, blending lighthearted humor with darker, more epic themes. The Hobbit serves as the prequel to The Lord of the Rings and introduces readers to the beloved world of Middle-earth."
+  },
+  {
+    "id": 9,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "description": "Crime and Punishment follows the inner turmoil of Rodion Raskolnikov, a poverty-stricken student who believes he can justify murder for a greater good. After he kills a pawnbroker and her sister, Raskolnikov is wracked with guilt and paranoia. The novel explores his mental anguish as he struggles with his conscience and the moral consequences of his crime. Dostoevsky masterfully delves into themes of morality, redemption, and the psychological effects of crime, making it one of the most profound and influential works in Russian literature."
+  },
+  {
+    "id": 10,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "description": "The Lord of the Rings is an epic high fantasy trilogy that follows the journey of a young hobbit, Frodo Baggins, who is entrusted with the task of destroying the One Ring, a powerful artifact that could bring about the end of the world. Along with his companions, Frodo embarks on a perilous journey across Middle-earth to destroy the Ring in the fires of Mount Doom, where it was forged. Tolkien’s world-building, rich in history, language, and myth, explores themes of friendship, sacrifice, and the ongoing struggle between good and evil."
+  },
+  {
+    "id": 11,
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "description": "Anna Karenina tells the tragic story of Anna, a beautiful but disillusioned woman trapped in a loveless marriage to an older, controlling man. She embarks on an affair with Count Vronsky, a dashing officer, which leads to public scandal and personal turmoil. Tolstoy examines themes of infidelity, family, and the complexities of love and society's judgment. The novel offers a profound exploration of Russian aristocracy, social conventions, and the conflict between personal desires and societal expectations."
+  },
+  {
+    "id": 12,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "description": "Set in a dystopian future where people are genetically engineered and society is governed by the principles of consumerism, Brave New World explores the consequences of technological advancement and the loss of individuality. The novel follows Bernard Marx, who feels alienated from the perfect society around him, and John, a 'savage' raised outside this controlled world. Huxley critiques the cost of mass conformity and the absence of meaningful human connections in a world where pleasure and stability are prioritized over freedom and truth."
+  },
+  {
+    "id": 13,
+    "title": "The Odyssey",
+    "author": "Homer",
+    "description": "The Odyssey follows Odysseus as he embarks on a perilous journey back to his homeland of Ithaca after the Trojan War. Along the way, he encounters gods, monsters, and a host of challenges that test his cunning, leadership, and resolve. Homer’s epic poem is a foundational work of Western literature, exploring themes of heroism, loyalty, and the human desire for home and family. Odysseus’ journey becomes symbolic of the universal quest for self-understanding and redemption."
+  },
+  {
+    "id": 14,
+    "title": "The Divine Comedy",
+    "author": "Dante Alighieri",
+    "description": "The Divine Comedy is a monumental epic that traces Dante's journey through Hell, Purgatory, and Paradise. Alongside his guide, the Roman poet Virgil, and later his beloved Beatrice, Dante confronts the punishments of the damned, the purifying trials of the soul, and the divine rewards awaiting the righteous. Through vivid depictions of spiritual realms, Dante addresses profound theological and philosophical issues, exploring justice, redemption, and the nature of God's grace."
+  },
+  {
+    "id": 15,
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "description": "The Brothers Karamazov follows the lives of three brothers—Dmitri, Ivan, and Alyosha—who are torn apart by their father Fyodor's debauched lifestyle and eventual murder. As the brothers grapple with questions of faith, morality, and the existence of God, Dostoevsky explores the complexity of human nature and the philosophical struggles that arise from suffering and free will. The novel delves deeply into theological debates, ethics, and the individual's search for meaning in a world of uncertainty."
+  },
+  {
+    "id": 16,
+    "title": "Don Quixote",
+    "author": "Miguel de Cervantes",
+    "description": "Don Quixote tells the story of an aging nobleman, Alonso Quixano, who reads so many chivalric romances that he loses his sanity and adopts the persona of Don Quixote. Believing himself to be a knight, he sets off on a series of misadventures with his faithful squire, Sancho Panza. The novel is a satirical commentary on the absurdity of idealism and the clash between reality and imagination. Cervantes’ masterpiece explores themes of honor, madness, and the nature of reality, making it a cornerstone of Western literature."
+  },
+  {
+    "id": 17,
+    "title": "The Trial",
+    "author": "Franz Kafka",
+    "description": "The Trial follows Josef K., a man who is suddenly arrested without knowing the charges against him. As he navigates a bureaucratic maze of absurd legal procedures, he becomes increasingly trapped in a nightmarish system. Kafka’s novel explores themes of alienation, powerlessness, and the dehumanizing effects of modern bureaucracy. The Trial is a haunting commentary on the nature of justice and the individual's struggle against a seemingly indifferent and oppressive society."
+  },
+  {
+    "id": 18,
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "description": "The Picture of Dorian Gray tells the story of a young man named Dorian who, influenced by the hedonistic philosophy of Lord Henry Wotton, makes a Faustian bargain to remain forever young while his portrait ages and bears the marks of his moral corruption. As Dorian descends into a life of excess and depravity, his portrait becomes more monstrous, reflecting the consequences of his actions. Wilde’s novel critiques the pursuit of beauty and pleasure at the cost of the soul, offering a scathing commentary on vanity and moral decay."
+  },
+  {
+    "id": 19,
+    "title": "The Scarlet Letter",
+    "author": "Nathaniel Hawthorne",
+    "description": "The Scarlet Letter follows Hester Prynne, a woman in Puritan New England who is publicly shamed for committing adultery and bears the scarlet letter 'A' as punishment. Despite the societal scorn, Hester refuses to reveal the identity of her lover. Hawthorne’s novel explores themes of sin, guilt, and redemption, as well as the complex dynamics of public shame and private morality. It is a poignant reflection on the effects of societal judgment and the tension between individual conscience and collective norms."
+  },
+  {
+    "id": 20,
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "description": "The Grapes of Wrath follows the Joad family as they travel westward during the Great Depression in search of a better life in California. Along the way, they face exploitation, injustice, and the harsh realities of migrant labor. Through the struggles of the Joads, Steinbeck addresses the themes of social inequality, human dignity, and the power of solidarity. The novel remains a powerful portrayal of the American experience during a time of profound economic hardship."
+  },
+  {
+    "id": 21,
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "description": "Frankenstein tells the story of Victor Frankenstein, a young scientist who creates a living creature from body parts and artificial life. However, the creature is abandoned and rejected by its creator, leading to tragic consequences. The novel explores themes of ambition, isolation, and the ethical responsibilities of scientific discovery. Shelley’s work critiques the dangers of unchecked scientific exploration while delving into the emotional toll of being an outsider, making it a seminal work in both Gothic fiction and science fiction."
+  },
+  {
+    "id": 22,
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "description": "Wuthering Heights is a haunting tale of love and revenge, centered around the passionate and destructive relationship between Heathcliff and Catherine Earnshaw. The novel explores the destructive power of love, obsession, and class struggle, set against the bleak, remote Yorkshire moors. Through Heathcliff’s obsessive quest to avenge his perceived wrongs, Brontë examines the complexities of human nature, emotional torment, and the lingering effects of trauma. The story’s gothic atmosphere and intense emotion make it a classic in English literature."
+  },
+  {
+    "id": 23,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "description": "The Catcher in the Rye follows Holden Caulfield, a disillusioned teenager struggling with depression after being expelled from his prep school. Narrated in a colloquial, often cynical tone, the novel follows Holden’s wandering through New York City as he grapples with his fears about growing up and losing his innocence. The title refers to Holden’s fantasy of saving children from the inevitable fall into adulthood, symbolizing his desire to preserve purity and innocence. Salinger’s exploration of alienation, identity, and emotional turmoil has made this novel a defining work in modern American literature."
+  },
+  {
+    "id": 24,
+    "title": "Catch-22",
+    "author": "Joseph Heller",
+    "description": "Catch-22 is a satirical novel set during World War II, following Captain John Yossarian, a bombardier who seeks to escape the madness of war. The term 'Catch-22' refers to a military rule that makes it impossible for soldiers to escape dangerous missions unless they are insane, but anyone who requests to be excused is deemed sane for doing so. Heller’s dark humor and absurd portrayal of bureaucracy, war, and survival reflect the paradoxical nature of life and death, making the novel an enduring commentary on the futility and insanity of war."
+  },
+  {
+    "id": 25,
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "description": "One Hundred Years of Solitude tells the multi-generational story of the Buendía family in the fictional town of Macondo. Through magical realism, Márquez explores themes of time, memory, and the cyclical nature of history. The novel captures the rise and fall of the Buendía family, intertwining personal and political struggles, as well as the search for meaning in a world marked by solitude, love, and the repetition of past mistakes. It remains one of the most influential works in Latin American literature and world literature."
+  },
+  {
+    "id": 26,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "The Alchemist is a philosophical novel about Santiago, a shepherd who embarks on a journey to discover his 'Personal Legend' and find treasure in the Egyptian pyramids. Along the way, he learns that true treasure lies not in material wealth but in self-discovery, spiritual growth, and the pursuit of one’s dreams. Through allegorical storytelling, Coelho explores themes of destiny, love, and the interconnectedness of the universe. The novel has inspired millions of readers worldwide to follow their own dreams and listen to their hearts."
+  },
+  {
+    "id": 27,
+    "title": "Beloved",
+    "author": "Toni Morrison",
+    "description": "Beloved is a powerful exploration of slavery’s legacy in post-Civil War America, focusing on Sethe, an escaped slave who is haunted by the ghost of her dead daughter, Beloved. As Sethe confronts the traumatic past of her enslavement, the novel examines themes of memory, motherhood, and the haunting effects of the past. Through vivid, poetic prose, Morrison reflects on the generational scars left by slavery and the struggle for identity and healing in a fractured society."
+  },
+  {
+    "id": 28,
+    "title": "The Sun Also Rises",
+    "author": "Ernest Hemingway",
+    "description": "The Sun Also Rises follows a group of expatriates in the 1920s as they travel from Paris to Spain. The novel focuses on the disillusionment and aimlessness of the Lost Generation, a group of writers and artists who came of age during World War I. Through the lens of the characters’ interactions, Hemingway explores themes of post-war trauma, love, and existential struggles. The novel’s concise, unadorned prose and exploration of meaninglessness have made it one of the definitive works of 20th-century American literature."
+  },
+  {
+    "id": 29,
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "description": "Dracula tells the story of Count Dracula’s attempt to move from Transylvania to England in order to spread the undead curse. The novel is a gothic horror classic, exploring themes of fear, sexuality, and the clash between Eastern and Western cultures. Through letters, diaries, and newspaper articles, Stoker builds a narrative of suspense and terror as Dracula’s dark influence grows, leading to a battle between him and a group of friends who try to stop him. The novel’s portrayal of the vampire legend has made it a lasting symbol in popular culture."
+  },
+  {
+    "id": 30,
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "description": "The Road follows a father and his young son as they struggle to survive in a post-apocalyptic world. As they make their way through a desolate landscape, they face challenges such as starvation, violent bands of survivors, and the harsh environment. The novel is a stark exploration of human endurance, the bonds of love, and the possibility of hope in the face of overwhelming despair. McCarthy’s minimalist prose and evocative descriptions create a haunting and emotionally powerful narrative."
+  },
+  {
+    "id": 31,
+    "title": "The Outsiders",
+    "author": "S.E. Hinton",
+    "description": "The Outsiders tells the story of Ponyboy Curtis, a member of the Greasers, a working-class gang in a small American town. The novel explores the struggles between the Greasers and the wealthier Socs, focusing on themes of class division, friendship, and identity. As Ponyboy navigates the turbulent period of adolescence, he learns about loyalty, honor, and the complexities of human nature. Hinton’s novel, written when she was just a teenager, remains a poignant portrayal of the challenges of growing up and the universal desire for acceptance."
+  },
+  {
+    "id": 32,
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "description": "The Kite Runner tells the story of Amir, a young boy from a privileged family in Kabul, Afghanistan, who forms a close bond with Hassan, the son of his father’s servant. The novel explores themes of friendship, guilt, and redemption, as Amir struggles with the repercussions of betraying Hassan during a moment of crisis. Set against the backdrop of Afghanistan’s turbulent history, Hosseini’s poignant narrative reflects on the impact of personal choices and the possibility of atonement, even in the face of betrayal."
+  },
+  {
+    "id": 33,
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "description": "In a future where books are banned and 'firemen' burn them, Guy Montag, a fireman, begins to question the oppressive society he serves. Montag’s journey of self-discovery leads him to rebel against the state, seeking knowledge and personal freedom. Bradbury’s dystopian novel critiques censorship, conformity, and the dangers of a society that sacrifices intellectual freedom for superficial pleasures. Fahrenheit 451 is a powerful exploration of the importance of literature, critical thinking, and individuality in a world dominated by media and technology."
+  },
+  {
+    "id": 34,
+    "title": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut",
+    "description": "Slaughterhouse-Five follows Billy Pilgrim, an optometrist who becomes 'unstuck in time' and experiences moments from his life, including his time as a soldier during World War II. The novel’s nonlinear narrative explores themes of fatalism, trauma, and the absurdity of war. Vonnegut’s blend of humor, science fiction, and commentary on the human condition has made this anti-war novel a modern classic. Slaughterhouse-Five remains a profound statement on the horrors of war and the absurdity of human existence."
+  },
+  {
+    "id": 35,
+    "title": "The Bell Jar",
+    "author": "Sylvia Plath",
+    "description": "The Bell Jar is a semi-autobiographical novel that follows Esther Greenwood, a young woman who struggles with depression while living in New York City. As Esther’s mental health deteriorates, she feels trapped by societal expectations and unable to escape the confines of her own mind. Plath’s exploration of mental illness, identity, and the pressures of womanhood in mid-20th-century America is both poignant and unsettling. The Bell Jar remains a powerful, raw portrayal of a woman’s battle for autonomy and self-worth."
+  },
+  {
+    "id": 36,
+    "title": "The Secret Garden",
+    "author": "Frances Hodgson Burnett",
+    "description": "The Secret Garden follows Mary Lennox, a spoiled and lonely girl who is sent to live with her uncle in a remote Yorkshire estate. There, she discovers a neglected garden and, with the help of new friends, brings it back to life. The novel explores themes of healing, friendship, and the transformative power of nature. As Mary learns to care for the garden, she also learns to care for herself and those around her. The Secret Garden remains a beloved children’s classic with timeless messages of growth and renewal."
+  },
+  {
+    "id": 37,
+    "title": "Gone with the Wind",
+    "author": "Margaret Mitchell",
+    "description": "Set during the American Civil War and its aftermath, Gone with the Wind tells the story of Scarlett O'Hara, a determined Southern belle who struggles to adapt to the changing world around her. The novel explores themes of love, survival, and the impact of war on both individuals and societies. Scarlett’s resilience, passion, and complex character have made her one of literature’s most memorable heroines. Mitchell’s epic tale paints a vivid portrait of the South during one of the most turbulent times in American history."
+  },
+  {
+    "id": 38,
+    "title": "The Hound of the Baskervilles",
+    "author": "Arthur Conan Doyle",
+    "description": "The Hound of the Baskervilles follows Sherlock Holmes and Dr. Watson as they investigate the mysterious death of Sir Charles Baskerville, apparently caused by a legendary ghostly hound. As they delve deeper into the mystery, they uncover."
+  },
+  {
+    "id": 39,
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "description": "The Picture of Dorian Gray tells the story of a young man, Dorian Gray, whose portrait ages while he remains eternally youthful. Influenced by the decadent philosophy of Lord Henry Wotton, Dorian leads a life of indulgence and excess, abandoning morality in pursuit of pleasure. As his portrait becomes a reflection of his increasingly corrupt soul, Dorian’s actions lead to tragic consequences. Wilde’s novel explores themes of vanity, the consequences of a hedonistic lifestyle, and the duality of human nature, making it one of the most provocative works of Gothic fiction."
+  }
   
+]
