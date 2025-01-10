@@ -1,136 +1,189 @@
 /* Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-    padding: 10px;
-    
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* Container Styles */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between elements */
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.search {
+  width: 700px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search:focus {
+  border-color: #4caf50; /* Green border when focused */
+}
+.field-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.green{
+  background-color: #4caf50; /* Green color */
+}
+
+.green:hover {
+  background-color: #25a72c; /* Darker green on hover */
+}
+
+.green:active {
+  background-color: #3e8e41; /* Even darker green when pressed */
+}
+
+.red{
+  background-color: #d8463c; /* Red for Home button */
+}
+
+.red:hover {
+  background-color: #eb2a27; /* Darker red on hover */
+}
+
+.red:active {
+  background-color: #d32f2f; /* Even darker red when pressed */
+}
+/* List and List Item Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+li {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.readmore {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff6347; /* Tomato color */
+  border: 2px solid #ff6347;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.readmore:hover {
+  background-color: #ff6347;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.readmore:active {
+  transform: translateY(1px);
+}
+
+/* Title and Author Styles */
+h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #8e44ad;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Description Styles */
+p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.not-found {
+  text-align: center;
+  font-size: 18px;
+  color: #ff4d4d;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   h1 {
-    text-align: center;
-    color: #333;
-    font-size: 3rem;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    letter-spacing: 1px;
+    font-size: 2.5rem;
   }
-  
-  /* Container Styles */
-  .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* List and List Item Styles */
-  ul {
-    list-style-type: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
+
   li {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
   }
-  
-  li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  }
-  .readmore {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #ff6347; /* Tomato color */
-    border: 2px solid #ff6347;
-    padding: 10px 20px;
-    border-radius: 30px;
-    background-color: white;
-    transition: all 0.3s ease;
-  }
-  
-  .readmore:hover {
-    background-color: #ff6347;
-    color: white;
-    transform: translateY(-3px);
-  }
-  
-  .readmore:active {
-    transform: translateY(1px);
-  }
-  
-  /* Title and Author Styles */
+
   h2 {
-    font-size: 1.8rem;
-    color: #2c3e50;
-    margin-bottom: 10px;
-    font-weight: 600;
+    font-size: 1.6rem;
   }
-  
+
   h3 {
-    font-size: 1.2rem;
-    color: #8e44ad;
-    margin-bottom: 15px;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  /* Description Styles */
-  p {
     font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
-    text-align: justify;
-    margin-bottom: 20px;
   }
-  .not-found {
-    text-align: center;
-    font-size: 18px;
-    color: #ff4d4d;
-    font-weight: bold;
-    padding: 20px;
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
-    border-radius: 5px;
-    max-width: 400px;
-    margin: 0 auto;
+
+  p {
+    font-size: 0.9rem;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2.5rem;
-    }
-  
-    li {
-      padding: 15px;
-    }
-  
-    h2 {
-      font-size: 1.6rem;
-    }
-  
-    h3 {
-      font-size: 1rem;
-    }
-  
-    p {
-      font-size: 0.9rem;
-    }
-  }
-  
+}
