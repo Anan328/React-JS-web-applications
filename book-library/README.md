@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Book Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Book Library** is a React-based web application that allows users to explore, search, and view details of books. It features dynamic routing, private routes, search functionality, and data fetching from a local API.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **React Router** for seamless navigation between pages.
+- **Route Redirection** using `Navigate` for handling redirects.
+- **Dynamic Route Parameters** for viewing individual book details.
+- **Not Found Route** for handling unknown URLs.
+- **Query Parameters** for searching books by title and author.
+- **Private Routes** for secured access to specific pages.
+- **Local API** for fetching book data.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: JavaScript library for building user interfaces.
+- **React Router**: For handling routing in the app.
+- **React State**: For managing the state of book data and user interactions.
+- **Local API**: Mocked API used to fetch book data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features in Detail
 
-### `npm test`
+### **1. Search Books**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- You can search for books by **title** or **author**.
+- Query parameters are used to filter the book list as you type.
 
-### `npm run build`
+### **2. View Book Details**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Clicking on a book will navigate to a **dynamic route** that displays detailed information about the selected book.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **3. Private Routes**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Some routes are protected and can only be accessed by authenticated users. Unauthorized users will be redirected to the login page.
 
-### `npm run eject`
+### **4. Not Found Route**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- If the user navigates to an invalid URL, a **404 page** will be shown.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Feel free to fork the repository, make changes, and create a pull request if you'd like to contribute.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any suggestions for improvements, feel free to open an issue or create a pull request. Contributions are always welcome!
