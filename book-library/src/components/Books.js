@@ -20,7 +20,9 @@ function Books() {
     // console.log(filteredBooks)
     // console.log(title);
 
-    navigate(`/?search=${title}`);
+    if(searchParam.length>0){
+      navigate(`/?search=${title}`);
+    }    
   };
   const Home = () => {
     navigate("/");
