@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // service layer
 const api  = axios.create({
-    baseURL: process.env.REACT_APP_API_BASE_URL
+    baseURL: "https://jsonplaceholder.typicode.com"
 })
 
 const getPosts = () => api.get("/posts");
